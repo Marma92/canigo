@@ -1,5 +1,5 @@
 
-# Project Title
+# Can I Go ? 
 
 This Project is an attempt to answer to [this given exercise](https://github.com/S0fien/KataNodeApi/tree/alpha). 
 
@@ -56,7 +56,7 @@ To deploy this project run
 
 ## Documentation
 
-[To be writter](https://linktodocumentation)
+[To be written](https://linktodocumentation)
 
 
 ## Acknowledgements
