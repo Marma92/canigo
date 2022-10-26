@@ -1,7 +1,7 @@
 
 # Can I Go ? 🙄
 
-This Project is an attempt to answer to [this given exercise](https://github.com/S0fien/KataNodeApi/tree/alpha). 
+This Project is an attempt to answer to [this given exercise](https://github.com/S0fien/KataNodeApi/tree/alpha).
 
 
 ## Requirements
