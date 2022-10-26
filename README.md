@@ -1,5 +1,5 @@
 
-# Project Title
+# Can I Go ? 🙄
 
 This Project is an attempt to answer to [this given exercise](https://github.com/S0fien/KataNodeApi/tree/alpha). 
 
@@ -54,9 +54,20 @@ To deploy this project run
 | `email` | `string` | **Required** **Unique** user's email|
 | `password` | `string` |**Required** user's password|
 
+
+#### Delete a user
+
+```http
+  DELETE /v1/users/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Name of user to delete |
+
 ## Documentation
 
-[To be writter](https://linktodocumentation)
+[To be written](https://linktodocumentation)
 
 
 ## Acknowledgements
