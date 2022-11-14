@@ -51,8 +51,12 @@ To deploy this project run
 | :-------- | :------- | :-------------------------------- |
 | `name`      | `string` | **Required**. Name of user to record |
 | `firstname` | `string` | **Required** Firstname of user to record|
-| `email` | `string` | **Required** **Unique** user's email|
-| `password` | `string` |**Required** user's password|
+| `age`      | `string` | **Required**. Age of user to record |
+| `email` | `string` | **Required** **Unique** User's email|
+| `phone` | `string` | **Required** User's phone number|
+| `address` | `string` | **Required** User's postal address|
+| `passId ` | `string` | Id of the user's pass|
+| `password` | `string` |**Required** User's password|
 
 
 #### Delete a user
