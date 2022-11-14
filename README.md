@@ -44,7 +44,7 @@ To deploy this project run
 #### Add a user
 
 ```http
-  PUT /v1/users/${id}
+  PUT /v1/users/
 ```
 
 | Parameter | Type     | Description                       |
