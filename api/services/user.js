@@ -2,14 +2,11 @@ const User = require('../models/user');
 
 exports.getById = async (req, res, next) => {
     const { id } = req.params;
-
     try {
         let user = await User.findById(id);
-
         if (user) {
             return res.status(200).json(user);
         }
-
         return res.status(404).json('user_not_found');
     } catch (error) {
         return res.status(501).json(error);
@@ -22,7 +19,11 @@ exports.add = async (req, res, next) => {
     ({
         name     : temp.name,
         firstname: temp.firstname,
+        age      : temp.age,
         email    : temp.email,
+        phone    : temp.phone,
+        address  : temp.address,
+        passId   : temp.passId,
         password : temp.password
     } = req.body);
 
@@ -30,7 +31,6 @@ exports.add = async (req, res, next) => {
 
     try {
         let user = await User.create(temp);
-
         return res.status(201).json(user);
     } catch (error) {
         return res.status(501).json(error);
@@ -41,10 +41,14 @@ exports.update = async (req, res, next) => {
     const temp = {};
 
     ({
-        name     : temp.name,
-        firstname: temp.firstname,
-        email    : temp.email,
-        password : temp.password
+      name     : temp.name,
+      firstname: temp.firstname,
+      age      : temp.age,
+      email    : temp.email,
+      phone    : temp.phone,
+      address  : temp.address,
+      passId   : temp.passId,
+      password : temp.password
     } = req.body);
 
     try {
