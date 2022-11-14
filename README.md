@@ -67,7 +67,7 @@ To deploy this project run
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Name of user to delete |
+| `id`      | `string` | **Required**. Id of user to delete |
 
 ## Documentation
 
