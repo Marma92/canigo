@@ -1,16 +1,16 @@
-var express       = require('express');
-var path          = require('path');
-var cookieParser  = require('cookie-parser');
-var logger        = require('morgan');
-const cors        = require('cors');
+const express       = require('express');
+const path          = require('path');
+const cookieParser  = require('cookie-parser');
+const logger        = require('morgan');
+const cors          = require('cors');
 
-var indexRouter   = require('./routes/v1/index');
-var usersRouter   = require('./routes/v1/users');
-const mongodb     = require('./db/mongo');
+const indexRouter   = require('./routes/v1/index');
+const usersRouter   = require('./routes/v1/users');
+const mongodb       = require('./db/mongo');
 
 mongodb.initClientDbConnection();
 
-var app = express();
+const app = express();
 
 app.use(cors({
   exposedHeaders: ['Authorization'],

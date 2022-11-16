@@ -5,10 +5,10 @@ const service = require('../../services/user');
 
 router.get('/:id', service.getById);
 
-router.put('/add', service.add);
+router.post('/', service.add);
 
-router.patch('/update', service.update);
+router.patch('/', service.update);
 
-router.delete('/delete', service.delete);
+router.delete('/', service.delete);
 
 module.exports = router;

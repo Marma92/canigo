@@ -1,2 +1,4 @@
 api/node_modules
 mongo/data
+*.iml
+.idea

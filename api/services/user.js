@@ -62,7 +62,7 @@ exports.update = async (req, res, next) => {
             });
 
             await user.save();
-            return res.status(201).json(user);
+            return res.status(301).json(user);
         }
 
         return res.status(404).json('user_not_found');
@@ -77,7 +77,7 @@ exports.delete = async (req, res, next) => {
   await User.deleteOne({ _id: id }, (err, d) => {
     if (err) return res.status(400)
     if (d.acknowledged && d.deletedCount == 1)
-      return res.status(200).json(`delete of ${id} successful`);
+      return res.status(202).json(`delete of ${id} successful`);
     else
       return res.status(404).json(`user ${id} does not exist or is already deleted`)
   });
